@@ -7,11 +7,4 @@ jobs:
     steps:
     - name: checkout source repo
       uses: actions/checkout@v2
-      
-    - name: linting
-      uses: panggggg/test_repo_pylinter1@main
-      with:
-        python-root: '.'
-        flake8-flags: ''
-        mypy-flags: ''
-        fail-on-isort: true
+
