@@ -29,7 +29,7 @@ jobs:
         pip install isort
         isort .
     - name : linting
-      uses: panggggg/python-lint@test
+      uses: panggggg/python-lint@main
       with:
         python-root-list: '.'
         use-pylint: false
