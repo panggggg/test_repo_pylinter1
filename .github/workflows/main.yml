@@ -28,4 +28,11 @@ jobs:
       run: |
         pip install isort
         isort .
-
+    - name : linting
+      uses: panggggg/python-lint@test
+      with:
+        python-root-list: '.'
+        use-pylint: false
+        use-flake8: false
+        use-mypy: false
+        use-isort: false 
