@@ -25,5 +25,5 @@ jobs:
         pip install mypy
         mypy .
     - name: Lint with isort
-      uses: panggggg/test_repo_pylinter1@main
+      uses: actions/test_repo_pylinter1@main
     
