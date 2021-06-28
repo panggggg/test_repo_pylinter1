@@ -24,5 +24,8 @@ jobs:
       run: |
         pip install mypy
         mypy .
-      
+    - name: Lint with isort
+      run: |
+        pip install isort
+        isort .
 
