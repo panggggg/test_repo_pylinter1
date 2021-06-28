@@ -25,5 +25,13 @@ jobs:
         pip install mypy
         mypy .
     - name: Lint with isort
-      uses: actions/test_repo_pylinter1@main
-    
+      run: |
+        pip install isort
+        isort .
+    - name : linting
+      uses: actions/pylinter@main
+      with:
+        python-root: '.'
+        flake8-flags: ''
+        mypy-flags: ''
+        fail-on-isort: false 
