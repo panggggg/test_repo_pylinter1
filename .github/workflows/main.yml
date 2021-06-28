@@ -28,10 +28,4 @@ jobs:
       run: |
         pip install isort
         isort .
-    - name : linting
-      uses: actions/pylinter@main
-      with:
-        python-root: '.'
-        flake8-flags: ''
-        mypy-flags: ''
-        fail-on-isort: false 
+   
